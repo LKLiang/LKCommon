@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LKIPAddress.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSLog(@"IPAddress = %@", [LKIPAddress getIPAddress:YES]);
+    
+    NSLog(@"IPAddress = %@", [LKIPAddress getIPAddress:NO]);
 }
 
 
